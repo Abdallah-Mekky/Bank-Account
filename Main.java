@@ -10,7 +10,7 @@ public class Bank_Acc {
         String Name,Email,An,Id,Password;
         Person p1 =new Person("Ah", "123", "abd");
         BankAcc b1 =new BankAcc(7000, p1, "567");
-        Person p2 =new Person("Ali", "567", "sham");
+        Person p2 =new Person("Ali", "567", "Hassan");
         BankAcc b2 =new BankAcc(1000, p2, "567");
       
         Scanner S = new Scanner(System.in);
