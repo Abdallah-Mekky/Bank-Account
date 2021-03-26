@@ -1,8 +1,8 @@
 
 package bank_acc;
 public abstract class Account { 
-    Person owner;
-    String Password;
+   private Person owner;
+   private String Password;
      
     public Account(){};
 
