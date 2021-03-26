@@ -1,26 +1,26 @@
-
 package bank_acc;
+
 import java.util.ArrayList;
+
 import java.util.List;
 
-
 public class Person {
-    String name;
-String ID;
-String Email;
-ArrayList<Account> accounts=new ArrayList<Account>(); 
 
+    private String name;
+    private String ID;
+    private String Email;
+    private List<Account> accounts;
 
     public Person(String name, String ID, String Email) {
-        this.name = name;
-        this.ID = ID;
-        this.Email = Email;
-        this.accounts=accounts;
+        this.setName(name);
+        this.setID(ID);
+        this.setEmail(Email);
+        accounts = new ArrayList();
     }
 
     public void setName(String name) {
-        this.name = name; 
-        
+        this.name = name;
+
     }
 
     public void setID(String ID) {
@@ -29,6 +29,10 @@ ArrayList<Account> accounts=new ArrayList<Account>();
 
     public void setEmail(String Email) {
         this.Email = Email;
+    }
+
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
     }
 
     public String getName() {
@@ -42,9 +46,13 @@ ArrayList<Account> accounts=new ArrayList<Account>();
     public String getEmail() {
         return Email;
     }
-       public String toString(){
- return (getName()+" , Id  Is " +getID()+" , Email Is " +getEmail()+"");}
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" + "name=" + name + ", ID=" + ID + ", Email=" + Email + ", accounts=" + accounts + '}';
+    }
 }
-
-
- 
